@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hey You 😏</title>
+  <style>
+    body {
+      background: #ffe6f0;
+      font-family: 'Comic Sans MS', sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #333;
+    }
+    h1 {
+      font-size: 50px;
+      color: #ff3399;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 50px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      background: #ff66b3;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    .message {
+      margin-top: 50px;
+      font-size: 28px;
+      color: #ff0066;
+      display: none;
+      animation: bounce 0.5s;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(-20px); }
+      50% { transform: translateY(10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey… you 😏</h1>
+  <h2>You made me smile… now it’s your turn!</h2>
+  <button onclick="showMessage()">Click me… if you dare 😳</button>
+  <div class="message" id="message">
+    ⚠️ Warning: Looking at this may cause uncontrollable blushing 💥<br><br>
+    Are you secretly a glitch? Because every time you’re around, my brain skips and my cheeks heat up 😏🔥
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
